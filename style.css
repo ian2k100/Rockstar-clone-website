@@ -23,6 +23,7 @@ body{
 
 .left {
     float: left;
+    width: 100%;
 }
 
 .right {
@@ -30,7 +31,7 @@ body{
 }
 
 .center {
-    text-align: center;
+  text-align: center;
 }
 
 .sizeh {
@@ -200,4 +201,51 @@ body{
 
 .inline {
   display: inline;
+}
+
+.sizel {
+  height: 20px;
+  width: 20px;
+}
+
+.leftf {
+  text-align: left;
+  margin: auto;
+  display: flex;
+  justify-content: left;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.rightf {
+  float: right;
+  text-align:right;
+  margin: auto;
+  display: flex;
+  justify-content: right;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 1em;
+}
+
+.centerf {
+  text-align: center;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+.footerspacing {
+  display: flex;
+}
+
+.footerbox {
+  background: var(--card-background-color);
+    color: var(--body-color);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
